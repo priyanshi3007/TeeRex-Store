@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Arvo&family=Barrio&family=Carter+One&family=Cherry+Cream+Soda&family=DM+Serif+Display&display=swap');
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #1D366F;
+    color: white;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  #navbar a:hover {
+    text-decoration: underline;
+  }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cartCount {
+    background-color: #ff5200;
+    color: white;
+    border-radius: 50%;
+    padding: 1px 8px;
+    font-size: 13px;
+    position: absolute;
+    top: 19px;
+    right: 24px;
+  }
+
+  
+  .product-card {
+  
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+  
+  .product-card img {
+    width: 100%;
+  }
+
+#Catalog{
+    font-family: 'Alegreya', serif;
+}
+
+
+  .searchDiv{
+    width: 40%;
+    height: 70px;
+    margin-left: auto;
+    margin-right: 20%;
+    margin-top: 3%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.srch{
+    width: 70%;
+    height: 40px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    font-family: 'Arvo', serif;
+}
+
+
+
+  .contentDiv{
+    width: 90%;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+   
+}
+
+  .contentDiv .filter-options {  
+        width: 30%;
+        height: auto;
+        /* border: 1px solid blue; */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
+  }
+  
+
+
+   .checkBoxDiv{
+    width: 50%;
+    height: auto;
+    margin-left: 41px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid yellow; */
+    padding: 4px;
+}
+.checkBoxDiv   .check_box{
+    width: 80%;
+    text-align: center;
+    /* border: 1px solid blue; */
+    position: relative;
+    margin-bottom: 7px;
+}
+.checkBoxDiv h4{
+    font-family: 'Carter One', system-ui;
+    font-size: 25PX;
+    color: #1D366F;
+    font-weight: revert-layer;
+    margin-bottom: 6px;
+}
+.check_box  label{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+   position: absolute;
+}
+.check_box  input{
+    width: 15px;
+    height: 15px;
+    margin-left: -85px;
+    background-color: #979292;
+    cursor: pointer;
+}
+
+
+
+  .product-list {
+  
+    width: 65%;
+    height: 100%;
+    height: 100%;
+  
+  }
+  .productDisplay button{
+    cursor: pointer;
+    margin: 3px 53px;
+    padding: 7px 11px 6px 13px;
+    background-color: rgb(161 185 251);
+    border: none;
+    border-radius: 9px;
+  }
+
+  .cart{
+    margin: 88px;
+  }
+
+  .cart h2{
+    font-family: 'Cherry Cream Soda', system-ui;
+   
+  }
+  .cart ul{
+    list-style-type: none;
+    font-family: 'DM Serif Display', serif;
+  }
+
+  .cart p{
+    font-size: x-large;
+    margin: 34px 38px;
+    font-family: 'Arvo';
+}
+  
+
+  .cart button{
+    cursor: pointer;
+    margin: 2px 26px 2px 30px;
+    
+    padding: 7px 11px 6px 13px;
+    background-color: rgb(148 173 243);
+    border: none;
+    border-radius: 29px;
+  }
+
+
+
+
+  /* .loading-ring {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } */
+
+  /* .skeleton {
+    opacity: .7;
+    animation: skeleton-loading 99s linear infinite alternate;
+  }
+  
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-color: hsl(199, 69%, 75%);
+    }
+  
+    100% {
+      background-color: hsl(204, 47%, 58%);
+    }
+  } */
+
+
+  .skeleton {
+    opacity: 0.7;
+  }
+  
+  .skeleton-rectangular {
+    width: 200px;
+    height: 239px;
+    background-color: hsl(199, 69%, 75%);
+    animation: skeleton-loading 55s linear infinite alternate;
+    margin-bottom: 20px;
+  }
+  
+  .skeleton-text {
+    width: 100px;
+    height: 20px;
+    background-color: hsl(199, 69%, 75%);
+    margin-bottom: 10px;
+    animation: skeleton-loading 55s linear infinite alternate;
+  }
+
+  .skeleton-bt{
+    margin-left: 58px;
+    margin-top: 19px;
+    height: 31px;
+    width: 81px;
+    background-color: hsl(199, 69%, 75%);
+    margin-bottom: 10px;
+    animation: skeleton-loading 55s linear infinite alternate;
+  }
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-color: hsl(199, 69%, 75%);
+    }
+  
+    100% {
+      background-color: hsl(204, 47%, 58%);
+    }
+  }
+
+
+
+
+/* @keyframes loading {
+  to {
+    background-position: -200% 0;
+  }
+} */
+
+
+  @media only screen and (max-width: 768px) {
+    .contentDiv {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .filter-options {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .product-list {
+      width: 100%;
+    }
+  }
+  
+
+  @media only screen and (max-width: 480px) {
+    .searchDiv {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .checkBoxDiv {
+      margin-left: 0;
+    }
+  }
